@@ -12,7 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
@@ -29,7 +31,7 @@
   --heading-color: #37423b;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
-  --accent-color: #5fcf80;
+  --accent-color: #5f70cf;
 
   /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
   --contrast-color: #ffffff;
@@ -41,7 +43,7 @@
   --nav-color: #272828;
 
   /* Nav Hover Color - This color is applied to main navmenu links when they are hovered over. */
-  --nav-hover-color: #5fcf80;
+  --nav-hover-color: #db2020;
 
   /* Nav Dropdown Background Color - This color is used as the background for dropdown boxes that appear when hovering over primary navigation items. */
   --nav-dropdown-background-color: #ffffff;
@@ -50,7 +52,7 @@
   --nav-dropdown-color: #272828;
 
   /* Nav Dropdown Hover Color - Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-  --nav-dropdown-hover-color: #5fcf80;
+  --nav-dropdown-hover-color: #db2020;
 }
 
 /* Smooth scroll */
@@ -151,7 +153,8 @@ h6 {
 }
 
 .scrolled .header {
-  box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0px 0 18px
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 /*--------------------------------------------------------------
@@ -201,7 +204,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -220,7 +223,8 @@ h6 {
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 85%);
+    box-shadow: 0px 0px 30px
+      color-mix(in srgb, var(--default-color), transparent 85%);
   }
 
   .navmenu .dropdown ul li {
@@ -240,11 +244,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -256,7 +260,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -357,7 +361,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -384,7 +388,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -507,7 +511,7 @@ h6 {
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: 100%;
@@ -515,11 +519,11 @@ h6 {
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px 2px 20px;
@@ -530,7 +534,7 @@ h6 {
   border-radius: 50px;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -693,7 +697,8 @@ h6 {
 
 .page-title .heading {
   padding: 80px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title .heading h1 {
@@ -719,11 +724,11 @@ h6 {
   font-weight: 600;
 }
 
-.page-title nav ol li+li {
+.page-title nav ol li + li {
   padding-left: 10px;
 }
 
-.page-title nav ol li+li::before {
+.page-title nav ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -743,7 +748,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 66px;
@@ -1125,7 +1129,8 @@ section,
 
 .courses .trainer {
   padding-top: 15px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .courses .trainer .trainer-profile img {
@@ -1430,7 +1435,8 @@ section,
   transition: 0.3s;
   color: var(--default-color);
   border-radius: 0;
-  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
   font-weight: 600;
   font-size: 15px;
 }
@@ -1617,7 +1623,8 @@ section,
 # Pricing Section
 --------------------------------------------------------------*/
 .pricing .pricing-item {
-  box-shadow: 0px 0px 4px color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 0px 4px
+    color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 20px;
   text-align: center;
   border-radius: 5px;
@@ -1727,7 +1734,7 @@ section,
   padding-bottom: 40px;
 }
 
-.contact .info-item+.info-item {
+.contact .info-item + .info-item {
   margin-top: 40px;
 }
 
@@ -1802,31 +1809,35 @@ section,
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1835,7 +1846,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
